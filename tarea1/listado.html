@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Listado de Adopciones</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/validaciones.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Listado de Avisos de Adopción</h1>
+        <nav>
+        <a href="portada.html">Volver a la portada</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Últimos avisos</h2>
+        <table id = "tabla-avisos">
+            <tr>
+            <th>Fecha Publicacion</th><th>Fecha Entrega</th><th>Comuna</th><th>Sector</th><th>Cantidad</th><th>Tipo</th><th>Edad</th><th>Nombre Contacto</th><th>Foto</th>
+            </tr>
+            <tr>
+            <td>2025-08-18 12:00</td><td>2025-09-31 13:00</td><td>Santiago</td><td>Beauchef 850, terraza</td><td>1</td><td>Gato</td><td>2 meses</td><td>Dario Osorio</td><td><img src="imagenes/gato1.png" alt="Un gato" width="60"></td>
+            </tr>
+            <tr>
+            <td>2025-08-17 19:00</td><td>2025-09-30 11:00</td><td>Ñuñoa</td><td>Plaza</td><td>3</td><td>Perro</td><td>2 meses</td><td>Alexis Sanchez</td><td><img src="imagenes/perro1.jpg" alt="Tres perros" width="60"></td>
+            </tr>
+            <tr>
+            <td>2025-08-17 12:00</td><td>2025-09-30 08:00</td><td>Providencia</td><td>Av. Andrés Bello 2425</td><td>1</td><td>Gato</td><td>6 meses</td><td>Elias Figueroa</td><td><img src="imagenes/gato2.jpg" alt= "Un gato" width="60"></td>
+            </tr>
+            <tr>
+            <td>2025-08-17 10:00</td><td>2025-09-30 15:00</td><td>Ñuñoa</td><td>Av. Grecia</td><td>2</td><td>Perro</td><td>1 año y 3 meses</td><td>Lucas Assadi</td><td><img src="imagenes/perro3.jpg" alt= "Dos perros" width="60"></td>
+            </tr>
+            <tr>
+            <td>2025-08-16 20:00</td><td>2025-09-28 19:00</td><td>Las Condes</td><td>Parque Araucano</td><td>1</td><td>Perro</td><td>1 mes</td><td>Fabian Hormazabal</td><td><img src="imagenes/perro2.avif" alt= "Un perro" width="60"></td>
+            </tr>
+        </table>
+        
+        <div id="detalle-aviso" class="modal" style="display:none;">
+        <div class="modal-contenido">
+            <span id="cerrar-detalle" class="cerrar">&times;</span>
+        </div>
+        </div>
+    </main>
+<script src="js/detalle_avisos.js" defer></script>
+</body>
+</html>

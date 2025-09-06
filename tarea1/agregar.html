@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Agregar Aviso</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/validaciones.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Agregar Aviso de Adopción</h1>
+    <nav>
+      <a href="portada.html">Volver a la portada</a>
+    </nav>
+  </header>
+    <main>
+      <div class="main-container">
+        <div id="val-box" hidden>
+            <h2 id="val-msg">Validacion</h2>
+            <ul id="val-list"></ul>
+        </div>
+        <form id = "formulario-adopcion">
+
+          <fieldset>
+
+            <legend>Información del Lugar de Entrega</legend>
+
+            <label for="Region">Región:</label>
+            <select id="Region" required>
+            <option value="">Seleccione...</option>
+            </select>
+            <label for="Comuna">Comuna:</label>
+            <select id="Comuna" required>
+            <option value="">Seleccione...</option>
+            </select>
+            <label>Sector: <input type="text" id="Sector" placeholder="Ingrese Sector" maxlength="100"> </label>
+          </fieldset>
+            
+          <fieldset>
+
+            <legend>Datos de Contacto</legend> 
+
+            <label>Nombre: <input type="text" id="Nombre" placeholder="Ingrese Nombre" minlength="3" maxlength="200" required></label>
+            <label>Email: <input type="email" id="Email" placeholder="Ingrese Email" maxlength = "100"  required></label>
+            <label>Telefono: <input type="tel" id="Telefono" placeholder="Ingrese Teléfono (+NNN.)"></label>
+            <label>Contactar por:
+            <select id="contactoPor">
+            <option value="">Seleccione...</option>
+            <option>Whatsapp</option>
+            <option>Telegram</option>
+            <option>X</option>
+            <option>Instagram</option>
+            <option>TikTok</option>
+            <option>Otra</option>
+            </select>
+            </label>
+            <label id="labelContactoID" style="display:none;">ID o URL de Contacto:</label>
+            <input type="text" id="contactoID" placeholder="Ingrese ID o URL" minlength="4" maxlength="50" style="display:none;">
+          </fieldset>
+
+          <fieldset>
+
+          <legend>Informacion de los Animales en Adopción</legend>
+
+            <label for="Tipo">Tipo de Mascota:</label>
+            <select id="Tipo" required>
+            <option value="">Seleccione...</option>
+            <option>Perro</option>
+            <option>Gato</option>
+            </select>
+            <label>Cantidad: <input type="number" id="Cantidad" placeholder="Ingrese Cantidad" min="1" required></label>
+            <label>Edad: <input type="number" id="Edad" placeholder="Ingrese Edad" min="1" required></label>
+            <select id= "UnidadEdad" required>
+            <option value="">Ingrese unidad (meses o años)</option>
+            <option>Años</option>
+            <option>Meses</option>
+            </select>
+            <label>Fecha Entrega: </label>
+            <input type="datetime-local" id="fechaEntrega" required>
+            <label>Descripción: </label>
+            <textarea id="Descripcion" cols="50" rows="10" placeholder="Agregue una descripcion (opcional)"></textarea>
+            <label>Foto: <input type="file" id="Fotos" accept="image/*" multiple required></label>
+          </fieldset>
+
+          <button type="submit" id="submit-btn">Agregar Aviso</button>
+        </form>
+      </div>
+    </main>
+<script src="js/region_comuna.js" defer></script>
+<script src="js/validaciones.js" defer></script>
+</body>
+</html>
+            
+
+
+            
+
+
+
